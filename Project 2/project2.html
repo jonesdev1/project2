@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- format navbar -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Devin Jones's Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="homepage.css">
+  <style type="text/css">
+
+/*fixed navbar*/
+    .navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 1000; /* Adjust the z-index as needed */
+}   
+
+  /*navbar image*/
+  .nimg {
+    position: fixed;
+    max-height: 40%;
+    max-width: 30%;
+   
+  }
+
+      body {
+      background-clip: url(sneakvid.mp4);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: scroll;
+      background-color: #fffcff;
+    }
+
+    /* set h6 design */
+    h6 {
+      color: ghostwhite;
+      font-size: 39px;
+      font-weight: inherit;
+    }
+     /* set h1 design */
+
+/* set h2 design */
+    h2 {
+      color: ghostwhite;
+      font-weight: inherit;
+    }
+
+/* set navbar color */
+    .nav-link {
+      color: #fffcff;
+    }
+
+/* set webpage design with css */
+ 
+
+      @keyframes flash {
+      0% { color: #e85d04; }
+      50% { color: #c1121f; }
+      100% { color: #e85d04; }
+    }
+
+    /*format  float text*/
+    .center {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: left;
+      height: 100vh; /* Adjust as needed */
+      margin: 0 auto;
+    }
+
+    .button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+    /*format flashing text*/
+    .flashing-text {
+      font-size: 100px;
+      font-weight: bold;
+      font-family: 'Trade Gothic Inline', sans-serif;
+      animation: flash 1s infinite; /* 1s duration, infinite repetition */
+      text-align: center;
+
+    }
+
+    /*format video */
+    .video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+  /* format footer */
+   .footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #333533; /* Add your preferred background color */
+  color: ghostwhite;
+  padding: 10px;
+  text-align: center;
+  z-index: 1000;
+   
+  </style>
+</head>
+<!-- insert navbar -->
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <h6 class="navbar-brand mx-auto text-center"> 
+            <a class="nav-link active" aria-current="page" href="https://instagram.com/kenrockgotem?igshid=MTNiYzNiMzkwZA=="><img src="bbn.jpg" alt="Logo"  style="width: 200px; height: 68px;">@kenrockgotem</a>
+          </h6>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="project2.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="inventory.html">Stock Up</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cart.html">Cart</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!-- insert video -->
+
+ <video autoplay muted loop class="video">
+    <source src="sneakvid.mp4" type="video/mp4">
+  </video>
+  
+   <div class="flashing-text center">
+  KENROCK GOT'EM
+  </div>
+ <!-- insert footer -->
+ 
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <div class="container-fluid footer">
+    &copy; 2023 Devin Jones
+  </div>
+</body>
+</html>

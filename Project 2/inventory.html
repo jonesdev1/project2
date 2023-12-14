@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <head>
+    <!-- navbar setting-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Devin Jones's Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="homepage.css">
+  <style type="text/css">
+
+    /*fixed navbar*/
+    .navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 1000; 
+}   
+  
+    body {
+         background-color: #000000;
+       background-color: #000000;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    }
+
+    main {
+  flex-grow: 1;
+}
+
+    /*table format*/
+    table {
+      margin: auto;
+      max-width: 100%;
+     
+    }
+
+    body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    /* format images*/
+    .img img {
+      width: 320px;
+      height: 220px;
+      text-align: center;
+      text color: white;
+    }
+
+    button {
+      padding: 7px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .img{
+      text-align: center;
+    }
+
+    .img button{
+      margin: 5px;
+      display: inline-block;
+    }
+
+    /* Change to the desired hover color */
+
+    button:hover {
+  background-color: #ADC178; 
+}
+.img h3{
+  text-align: center;
+  color: white;
+}
+
+  </style>
+</head>
+<body>
+  <!--insert navbar-->
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <h6 class="navbar-brand mx-auto text-center"> 
+            <a class="nav-link active" aria-current="page" href="https://instagram.com/kenrockgotem?igshid=MTNiYzNiMzkwZA=="><img src="bbn.jpg" alt="Logo"  style="width: 200px; height: 68px;">@kenrockgotem</a>
+          </h6>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="project2.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="inventory.html">Stock Up</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cart.html">Cart</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--set table for items-->
+<table>
+<tr>
+  <!--item 1-->
+  <td class="img">
+    <img src="dior.webp">
+    <h3>Dior Air Jordan 1</h3>
+     <button onclick="addToCart('Dior Air jordan 1 - Size 8', 250.00, 'dior.webp')">Size 8</button>
+      <button onclick="addToCart('Dior Air Jordan 1 - Size 9', 250.00, 'dior.webp')">Size 9</button>
+      <button onclick="addToCart('Dior Air Jordan 1 - Size 10', 250.00, 'dior.webp')">Size 10</button>
+       <button onclick="addToCart('Dior Air Jordan 1 - Size 9', 250.00, 'dior.webp')">Size 11</button>
+  </td>
+<!--item 2-->
+  <td class="img">
+    <img src="dunk.webp">
+    <h3>Panda Dunks</h3>
+     <button onclick="addToCart('Panda Dunks - Size 8', 100.00, 'dunk.webp')">Size 8</button>
+      <button onclick="addToCart('Panda Dunks - Size 9', 100.00, 'dunk.webp')">Size 9</button>
+      <button onclick="addToCart('Panda Dunks - Size 10', 100.00, 'dunk.webp')">Size 10</button>
+       <button onclick="addToCart('Panda Dunks - Size 9', 100.00, 'dunk.webp')">Size 11</button>
+  </td>
+  <td class="img">
+    <img src="4red.jpg">
+    <h3>Red Cement Jordan 4</h3>
+     <button onclick="addToCart('Red Cement Jordan 4 - Size 8', 250.00, '4red.jpg')">Size 8</button>
+      <button onclick="addToCart('Red Cement Jordan 4 - Size 9', 250.00, '4red.jpg')">Size 9</button>
+      <button onclick="addToCart('Red Cement Jordan 4 - Size 10', 250.00, '4red.jpg')">Size 10</button>
+       <button onclick="addToCart('Red Cement Jordan 4 - Size 9', 250.00, '4red.jpg')">Size 11</button>
+  </td>
+  <td class="img">
+    <img src="af1.jpg">
+    <h3>Air Force 1</h3>
+     <button onclick="addToCart('Air Force 1 - Size 8', 250.00, 'af1.jpg')">Size 8</button>
+      <button onclick="addToCart('Air Force 1 - Size 9', 250.00, 'af1.jpg')">Size 9</button>
+      <button onclick="addToCart('Air Force 1 - Size 10', 250.00, 'af1.jpg')">Size 10</button>
+      <button onclick="addToCart('Air Force 1 - Size 9', 250.00, 'af1.jpg')">Size 11</button>
+  </td>
+</tr>
+
+
+<tr>
+  <td class="img">
+    <img src="air2.jpg">
+  <h3>Air Max Plus Barcelona</h3>
+     <button onclick="addToCart('Air Max Plus Barcelona - Size 8', 250.00, 'air2.jpg')">Size 8</button>
+      <button onclick="addToCart('Air Max Plus Barcelona - Size 9', 250.00, 'air2.jpg')">Size 9</button>
+      <button onclick="addToCart('Air Max Plus Barcelona - Size 10', 250.00, 'air2.jpg')">Size 10</button>
+       <button onclick="addToCart('Air Max Plus Barcelona - Size 9', 250.00, 'air2.jpg')">Size 11</button>
+  </td>
+    <td class="img">
+    <img src="ba.jpg">
+  <h3>Air Max 95</h3>
+     <button onclick="addToCart('Air Max 95 - Size 8', 250.00, 'ba.jpg')">Size 8</button>
+      <button onclick="addToCart('Air Max 95 - Size 9', 250.00, 'ba.jpg')">Size 9</button>
+      <button onclick="addToCart('Air Max 95 - Size 10', 250.00, 'ba.jpg')">Size 10</button>
+       <button onclick="addToCart('Air Max 95 - Size 11', 250.00, 'ba.jpg')">Size 11</button>
+  </td>
+    <td class="img">
+    <img src="gt.jpg">
+  <h3>Georgetown Airmax 97</h3>
+     <button onclick="addToCart('Georgetown Airmax 97 - Size 8', 250.00, 'gt.jpg')">Size 8</button>
+      <button onclick="addToCart('Georgetown Airmax 97 - Size 9', 250.00, 'gt.jpg')">Size 9</button>
+      <button onclick="addToCart('Georgetown Airmax 97 - Size 10', 250.00, 'gt.jpg')">Size 10</button>
+       <button onclick="addToCart('Georgetown Airmax 97 - Size 11', 250.00, 'gt.jpg')">Size 11</button>
+  </td>
+    <td class="img">
+    <img src="ki.jpg">
+  <h3>Khaki Airmax 270</h3>
+     <button onclick="addToCart('Khaki Airmax 270 - Size 8', 250.00, 'ki.jpg')">Size 8</button>
+      <button onclick="addToCart('Khaki Airmax 270 - Size 9', 250.00, 'ki.jpg')">Size 9</button>
+      <button onclick="addToCart('Khaki Airmax 270 - Size 10', 250.00, 'ki.jpg')">Size 10</button>
+       <button onclick="addToCart('Khaki Airmax 270 - Size 11', 250.00, 'ki.jpg')">Size 11</button>
+  </td>
+</tr>
+<tr>
+    <td class="img">
+    <img src="yeezybrown.jpg">
+  <h3>yeezy 700</h3>
+     <button onclick="addToCart('yeezy 700 - Size 8', 250.00, 'yeezybrown.jpg')">Size 8</button>
+      <button onclick="addToCart('yeezy 700 - Size 9', 250.00, 'yeezybrown.jpg')">Size 9</button>
+      <button onclick="addToCart('yeezy 700 - Size 10', 250.00, 'yeezybrown.jpg')">Size 10</button>
+       <button onclick="addToCart('yeezy 700 - Size 9', 250.00, 'yeezybrown.jpg')">Size 11</button>
+  </td>
+    <td class="img">
+    <img src="y3.jpg">
+  <h3>Yeezy 350 v2</h3>
+     <button onclick="addToCart('Yeezy 350 v2 - Size 8', 250.00, 'y3.jpg')">Size 8</button>
+      <button onclick="addToCart('Yeezy 350 v2 - Size 9', 250.00, 'y3.jpg')">Size 9</button>
+      <button onclick="addToCart('Yeezy 350 v2 - Size 10', 250.00, 'y3.jpg')">Size 10</button>
+       <button onclick="addToCart('Yeezy 350 v2 - Size 9', 250.00, 'y3.jpg')">Size 11</button>
+  </td>
+    <td class="img">
+    <img src="y1.jpg">
+  <h3>Yeezy 700 OFF</h3>
+     <button onclick="addToCart('Yeezy 700 OFF - Size 8', 250.00, 'y1.jpg')">Size 8</button>
+      <button onclick="addToCart('Yeezy 700 OFF - Size 9', 250.00, 'y1.jpg')">Size 9</button>
+      <button onclick="addToCart('Yeezy 700 OFF - Size 10', 250.00, 'y1.jpg')">Size 10</button>
+       <button onclick="addToCart('Yeezy 700 OFF - Size 9', 250.00, 'y1.jpg')">Size 11</button>
+  </td>
+    <td class="img">
+    <img src="y2.jpg">
+  <h3>Yeezy 500</h3>
+     <button onclick="addToCart('Yeezy 500 - Size 8', 250.00, 'y2.jpg')">Size 8</button>
+      <button onclick="addToCart('Yeezy 500 - Size 9', 250.00, 'y2.jpg')">Size 9</button>
+      <button onclick="addToCart('Yeezy 500 - Size 10', 250.00, 'y2.jpg')">Size 10</button>
+       <button onclick="addToCart('Yeezy 500 - Size 9', 250.00, 'y2.jpg')">Size 11</button>
+  </td>
+</tr>
+<tr>
+    <td class="img">
+    <img src="s1.jpg">
+  <h3>Yeezy Slides</h3>
+     <button onclick="addToCart('Yeezy Slides - Size 8', 250.00, 's1.jpg')">Size 8</button>
+      <button onclick="addToCart('Yeezy Slides - Size 9', 250.00, 's1.jpg')">Size 9</button>
+      <button onclick="addToCart('Yeezy Slides - Size 10', 250.00, 's1.jpg')">Size 10</button>
+       <button onclick="addToCart('Yeezy Slides - Size 9', 250.00, 's1.jpg')">Size 11</button>
+  </td>
+    <td class="img">
+    <img src="s2.jpg">
+  <h3>Yeezy Foam Runners</h3>
+     <button onclick="addToCart('Yeezy Foam Runners - Size 8', 250.00, 's2.jpg')">Size 8</button>
+      <button onclick="addToCart('Yeezy Foam Runners - Size 9', 250.00, 's2.jpg')">Size 9</button>
+      <button onclick="addToCart('Yeezy Foam Runners- Size 10', 250.00, 's2.jpg')">Size 10</button>
+       <button onclick="addToCart('Yeezy Foam Runners - Size 9', 250.00, 's2.jpg')">Size 11</button>
+  </td>
+    <td class="img">
+    <img src="s3.webp">
+  <h3>Gucci Slides</h3>
+     <button onclick="addToCart('Gucci Slides - Size 8', 250.00, 's3.webp')">Size 8</button>
+      <button onclick="addToCart('Gucci Slides - Size 9', 250.00, 's3.webp')">Size 9</button>
+      <button onclick="addToCart('Gucci Slides - Size 10', 250.00, 's3.webp')">Size 10</button>
+       <button onclick="addToCart('Gucci Slides - Size 9', 250.00, 's3.webp')">Size 11</button>
+  </td>
+    <td class="img">
+    <img src="s4.jpg">
+  <h3>Coach Slides</h3>
+     <button onclick="addToCart('Coach Slides - Size 8', 250.00, 's4.jpg')">Size 8</button>
+      <button onclick="addToCart('Coach Slides - Size 9', 250.00, 's4.jpg')">Size 9</button>
+      <button onclick="addToCart('Coach Slides - Size 10', 250.00, 's4.jpg')">Size 10</button>
+       <button onclick="addToCart('Coach Slides - Size 9', 250.00, 's4.jpg')">Size 11</button>
+  </td>
+</tr>
+  </table>
+
+   <script>
+    //set format for sending to cart
+    function addToCart(itemName, price, image) {
+      // Retrieve existing cart items or create an empty array
+      let cartItems = JSON.parse(sessionStorage.getItem('cartItems')) || [];
+
+      // Add the new item to the cart
+      cartItems.push({name: itemName, price: price, image: image });
+
+      // Store the updated cart in local storage
+      sessionStorage.setItem('cartItems', JSON.stringify(cartItems));
+
+    // Update the cart count display
+    updateCartCount();
+
+   
+  }
+  //Format the new items
+  function updateCartCount() {
+    let cartItems = JSON.parse(sessionStorage.getItem('cartItems')) || [];
+    const cartCount = document.getElementById('cart-count');
+
+    // Update the cart count display
+    cartCount.textContent = cartItems.length; 
+  }
+  </script>
+ 
+</body>
+</head>
+</html>
